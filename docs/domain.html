@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Domain | Water Quality &amp; Contamination Detection</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="top">
+<header class="site-header">
+  <div class="wrap header-in">
+<a class="brand" href="index.html" aria-label="Home">
+      <img class="mark" src="images/logo.jpeg" alt="" aria-hidden="true">
+      <span class="brand-text"><strong>Research Portfolio</strong><small>Automated Water Quality & Contamination Detection</small></span>
+    </a>
+    <nav class="links" aria-label="Main"><a href="index.html">Home</a><a href="domain.html" aria-current="page">Domain</a><a href="milestones.html">Milestones</a><a href="documents.html">Documents</a><a href="presentations.html">Presentations</a><a href="about.html">About us</a><a href="contact.html">Contact us</a></nav>
+  </div>
+</header>
+<main class="wrap">
+
+<div class="page-head"><span class="tag">Domain</span><h1>The research behind our work</h1><p>Literature survey, research gap, problem, objectives, methodology and technologies.</p></div>
+<nav class="toc" aria-label="On this page">
+  <a href="#literature">Literature survey</a><a href="#gap">Research gap</a><a href="#problem">Research problem</a><a href="#objectives">Research objectives</a><a href="#methodology">Methodology</a><a href="#technologies">Technologies used</a>
+</nav>
+
+<section id="literature">
+  <div class="head"><span class="tag">Literature survey</span><h2>What existing work says</h2></div>
+  <div class="bento">
+    <div class="cell s3"><span class="tag">3.1</span><h3>Computer vision for visible water contamination detection</h3><p>Review object detection approaches such as YOLO and Faster R-CNN for water imagery.</p></div>
+    <div class="cell s3"><span class="tag">3.2</span><h3>Machine learning for water quality classification</h3><p>Review Random Forest and Gradient Boosting approaches for tabular physicochemical measurements.</p></div>
+    <div class="cell s3"><span class="tag">3.3</span><h3>Deep learning for microorganism detection</h3><p>Review object detection models and labeled microscopy datasets for microorganism recognition.</p></div>
+    <div class="cell s3"><span class="tag">3.4</span><h3>RAG-based water safety guidance</h3><p>Review retrieval-grounded report generation, WHO drinking-water references, household treatment guidance and deterministic chemical dosage calculation.</p></div>
+  </div>
+</section>
+
+<section id="gap">
+  <div class="head"><span class="tag">Research gap</span><h2>What is missing today</h2></div>
+  <div class="bento"><div class="cell s6"><p>This research seeks to address the need for an integrated assessment workflow that combines image-based contamination detection, physicochemical classification, microscopy-based microorganism detection, and purification advice.</p><p class="note">This gap will be supported by the literature survey above.</p></div></div>
+</section>
+
+<section id="problem">
+  <div class="head"><span class="tag">Research problem</span><h2>The problem and the proposed solution</h2></div>
+  <div class="bento">
+    <div class="cell s3"><span class="tag">Problem statement</span><p>Water quality evaluation involves several kinds of evidence, including visible contaminants, measured physicochemical parameters, and microorganisms. A unified assessment and actionable purification guidance are needed to bring these findings together.</p></div>
+    <div class="cell s3"><span class="tag">Proposed solution</span><p>The proposed system receives water sample photographs, physicochemical measurements and microscope images. Components 1 to 3 analyze these inputs. Component 4 combines their outputs, generates a diagnosis summary, and provides purification instructions and rule-calculated chemical dosages where needed.</p></div>
+  </div>
+</section>
+
+<section id="objectives">
+  <div class="head"><span class="tag">Research objectives</span><h2>What the team set out to achieve</h2></div>
+  <div class="bento">
+    <div class="cell big s6"><span class="tag">Main objective</span><p>Develop an integrated AI-based system to assess water quality and contamination and provide appropriate purification guidance.</p></div>
+  </div>
+  <h3 class="sub-h">Component objectives and novelty</h3>
+  <div class="bento">
+    <article class="cell s3 comp k1">
+      <span class="chip"><b>1</b>Component 1</span>
+      <h3>Contamination Detection</h3>
+      <p class="who">Member: <span class="ph">WIJESINGHA WASPD</span></p>
+      <p><span class="lab">Objective.</span> Identify and localize visible contaminants in water images using deep learning object detection.</p>
+      <p class="nov"><span class="lab">Novelty.</span> <span class="ph">A water-specific detection approach that combines contamination localisation with image-quality checks and validated severity estimation, helping distinguish contamination from poor lighting or unclear images.</span></p>
+    </article>
+    <article class="cell s3 comp k2">
+      <span class="chip"><b>2</b>Component 2</span>
+      <h3>Water Quality Classification</h3>
+      <p class="who">Member: <span class="ph">DE SILVA WNN</span></p>
+      <p><span class="lab">Objective.</span> Classify water quality from physicochemical parameters using supervised machine learning.</p>
+      <p class="nov"><span class="lab">Novelty.</span> <span class="ph"> A classification approach that combines machine-learning predictions with parameter-level threshold checks and missing-data warnings, providing an explainable assessment and highlighting disagreements between predictions and measured parameters.</span></p>
+    </article>
+    <article class="cell s3 comp k3">
+      <span class="chip"><b>3</b>Component 3</span>
+      <h3>Microorganism Detection</h3>
+      <p class="who">Member: <span class="ph">DODANWELA D</span></p>
+      <p><span class="lab">Objective.</span> Detect and localize microorganisms in microscope images using deep learning object detection.</p>
+      <p class="nov"><span class="lab">Novelty.</span> <span class="ph">A microscopy-based approach that combines small-organism detection, counting and uncertainty handling, referring ambiguous images for expert review and reporting only categories supported by validated reference labels.</span></p>
+    </article>
+    <article class="cell s3 comp k4">
+      <span class="chip"><b>4</b>Component 4</span>
+      <h3>Water Safety Report &amp; Purification Advisor</h3>
+      <p class="who">Member: <span class="ph">RATHNAYAKE RMNA</span></p>
+      <p><span class="lab">Objective.</span> Combine analysis results and generate a water safety report and contamination-specific purification guidance using RAG and deterministic dosage calculation.</p>
+      <p class="nov"><span class="lab">Novelty.</span> <span class="ph">A RAG-based advisor that combines all three analytical outputs, checks whether guidance applies to the sample, and generates evidence-linked recommendations. Any dosage calculation uses separately validated rules rather than language-model estimates.</span></p>
+    </article>
+  </div>
+</section>
+
+<section id="methodology">
+  <div class="head"><span class="tag">Methodology</span><h2>How the research is done</h2></div>
+  <div class="bento">
+    <div class="cell s6"><span class="tag">Overall approach</span>
+      <div class="flow">
+        <div><b>Inputs</b>Water photographs, physicochemical measurements and microscope images</div>
+        <div><b>Components 1 to 3</b>Detect contamination, classify water quality and detect microorganisms</div>
+        <div><b>Component 4</b>Combines the results and retrieves purification guidance</div>
+        <div><b>Result</b>Diagnosis summary, purification steps and calculated dosages</div>
+      </div>
+      <p class="note" style="margin-top:1.2rem">Final datasets, model versions, evaluation metrics and results will be added as the research progresses.</p>
+    </div>
+    <div class="cell s6"><span class="tag">System architecture</span>
+      <figure style="margin:0"><img src="images/architecture.jpeg" alt="System architecture diagram showing the integrated water quality assessment pipeline" style="width:100%;height:auto;border-radius:.75rem;border:1px solid var(--line);background:var(--surface-2)"></figure>
+    </div>
+    <article class="cell s3 comp k1">
+      <span class="chip"><b>1</b>Component 1</span>
+      <h3>Contamination Detection</h3>
+      <dl class="spec"><div><dt>Technology</dt><dd>Deep learning: computer vision and object detection</dd></div><div><dt>Proposed model</dt><dd>CNN-based object detector, such as YOLO or Faster R-CNN</dd></div><div><dt>Input</dt><dd>Water sample photographs</dd></div><div><dt>Targets</dt><dd>Turbidity, discoloration, oil sheen, algae bloom, floating debris and microplastics</dd></div><div><dt>Approach</dt><dd>Train an object detection model on labeled water sample photographs to identify and localize visible contamination.</dd></div><div><dt>Output</dt><dd>Bounding boxes, contamination type and severity</dd></div></dl>
+    </article>
+    <article class="cell s3 comp k2">
+      <span class="chip"><b>2</b>Component 2</span>
+      <h3>Water Quality Classification</h3>
+      <dl class="spec"><div><dt>Technology</dt><dd>Supervised machine learning</dd></div><div><dt>Proposed model</dt><dd>Random Forest or Gradient Boosting classifier</dd></div><div><dt>Input</dt><dd>Measured pH, hardness, turbidity, total dissolved solids (TDS) and fluoride level</dd></div><div><dt>Approach</dt><dd>Train a classifier on tabular water quality data to determine overall quality.</dd></div><div><dt>Output</dt><dd>Safe or unsafe classification, or a quality grade, with parameter-level flags</dd></div></dl>
+    </article>
+    <article class="cell s3 comp k3">
+      <span class="chip"><b>3</b>Component 3</span>
+      <h3>Microorganism Detection</h3>
+      <dl class="spec"><div><dt>Technology</dt><dd>Deep learning: object detection</dd></div><div><dt>Proposed model</dt><dd>CNN-based object detector, such as YOLO or Faster R-CNN</dd></div><div><dt>Input</dt><dd>Microscope imagery of water samples</dd></div><div><dt>Approach</dt><dd>Train on labeled microscopy datasets to identify and localize bacterial and other microorganism species.</dd></div><div><dt>Output</dt><dd>Bounding boxes with the detected species or genus</dd></div></dl>
+    </article>
+    <article class="cell s3 comp k4">
+      <span class="chip"><b>4</b>Component 4</span>
+      <h3>Water Safety Report &amp; Purification Advisor</h3>
+      <dl class="spec"><div><dt>Technology</dt><dd>Generative AI: Retrieval-Augmented Generation (RAG)</dd></div><div><dt>Input</dt><dd>Outputs of components 1 to 3</dd></div><div><dt>Approach</dt><dd>Combine the detection and classification results. If the water is classified as safe, produce a concise confirmation report. If it is unsafe, retrieve contamination-specific purification guidance from a curated knowledge base and generate step-by-step instructions.</dd></div><div><dt>Knowledge base</dt><dd>WHO drinking-water guidelines and household water treatment references</dd></div><div><dt>Chemical calculator</dt><dd>Deterministic, rule-based calculation for quantities such as chlorination or coagulant dose. Dosage numbers are never invented by the language model.</dd></div><div><dt>Output</dt><dd>Diagnosis summary, purification steps and calculated dosages</dd></div></dl>
+    </article>
+  </div>
+</section>
+
+<section id="technologies">
+  <div class="head"><span class="tag">Technologies used</span><h2>Tools behind each component</h2></div>
+  <div class="bento">
+    <article class="cell s3 comp k1">
+      <span class="chip"><b>1</b>Component 1</span>
+      <h3>Contamination Detection</h3>
+      <ul><li>Deep learning</li><li>Computer vision and object detection</li><li>CNN-based detector, such as YOLO or Faster R-CNN</li></ul>
+    </article>
+    <article class="cell s3 comp k2">
+      <span class="chip"><b>2</b>Component 2</span>
+      <h3>Water Quality Classification</h3>
+      <ul><li>Supervised machine learning</li><li>Random Forest or Gradient Boosting classifier</li><li>Tabular data: pH, hardness, turbidity, TDS and fluoride</li></ul>
+    </article>
+    <article class="cell s3 comp k3">
+      <span class="chip"><b>3</b>Component 3</span>
+      <h3>Microorganism Detection</h3>
+      <ul><li>Deep learning</li><li>Object detection</li><li>CNN-based detector, such as YOLO or Faster R-CNN</li><li>Labeled microscopy datasets</li></ul>
+    </article>
+    <article class="cell s3 comp k4">
+      <span class="chip"><b>4</b>Component 4</span>
+      <h3>Water Safety Report &amp; Purification Advisor</h3>
+      <ul><li>Generative AI: Retrieval-Augmented Generation (RAG)</li><li>Knowledge base: WHO drinking-water guidelines and household water treatment references</li><li>Rule-based chemical calculator for dosages</li></ul>
+    </article>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+<div class="foot-brand">
+        <a class="brand" href="index.html" aria-label="Home">
+      <img class="mark" src="images/logo.jpeg" alt="" aria-hidden="true">
+      <span class="brand-text"><strong>Research Portfolio</strong><small>Automated Water Quality & Contamination Detection</small></span>
+    </a>
+        <p>An integrated AI system that assesses water quality and contamination and recommends purification steps.</p>
+      </div>
+      <div>
+        <h2>Explore</h2>
+        <ul><li><a href="index.html">Home</a></li><li><a href="domain.html">Domain</a></li><li><a href="milestones.html">Milestones</a></li><li><a href="documents.html">Documents</a></li><li><a href="presentations.html">Presentations</a></li><li><a href="about.html">About us</a></li><li><a href="contact.html">Contact us</a></li></ul>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <ul>
+          <li>dinidu2001dananjaya@gmail.com</li>
+          <li>+94 76 050 5141</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Research</h2>
+        <ul>
+          <li>Faculty of Computing, Sri Lanka Institute of Information Technology</li>
+          <li>SLIIT, New Kandy Road, Malabe, Sri Lanka</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base"><span>&copy; 2026 Automated Water Quality &amp; Contamination Detection. All rights reserved.</span><a href="#top">Back to top</a></div>
+  </div>
+</footer>
+</body>
+</html>
