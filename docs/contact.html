@@ -4,23 +4,61 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>Contact us | Water Quality &amp; Contamination Detection</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+
 <link rel="stylesheet" href="css/styles.css">
+
+<!-- Contact form validation border fix -->
+<style>
+.formcard input:not([type="hidden"]):not([name="_honey"]),
+.formcard textarea {
+  border: 1px solid #263454;
+  outline: none;
+  box-shadow: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Remove red borders caused by validation states */
+.formcard input:invalid,
+.formcard textarea:invalid {
+  border-color: #263454;
+  box-shadow: none;
+}
+
+/* Focus state */
+.formcard input:focus,
+.formcard textarea:focus {
+  border-color: #60a5fa;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.15);
+}
+
+/* Keep hidden fields hidden */
+.formcard input[type="hidden"],
+.formcard input[name="_honey"] {
+  display: none;
+}
+</style>
+
 </head>
 
 <body id="top">
 
 <header class="site-header">
   <div class="wrap header-in">
+
     <a class="brand" href="index.html" aria-label="Home">
       <img class="mark" src="images/logo.jpeg" alt="" aria-hidden="true">
+
       <span class="brand-text">
         <strong>Research Portfolio</strong>
-        <small>Automated Water Quality & Contamination Detection</small>
+        <small>Automated Water Quality &amp; Contamination Detection</small>
       </span>
     </a>
 
@@ -33,6 +71,7 @@
       <a href="about.html">About us</a>
       <a href="contact.html" aria-current="page">Contact us</a>
     </nav>
+
   </div>
 </header>
 
@@ -40,7 +79,9 @@
 
   <div class="page-head">
     <span class="tag">Contact us</span>
+
     <h1>Get in touch with the team</h1>
+
     <p>
       We welcome inquiries, feedback and collaboration
       opportunities relating to our research into automated
@@ -51,7 +92,9 @@
   <section>
     <div class="split">
 
+      <!-- Research team contact details -->
       <div class="mailcard">
+
         <h3>Research team</h3>
 
         <div>
@@ -68,8 +111,10 @@
           <span class="tag">Address</span>
           <code>SLIIT, New Kandy Road, Malabe, Sri Lanka</code>
         </div>
+
       </div>
 
+      <!-- Contact form -->
       <div class="formcard">
 
         <form
@@ -77,7 +122,7 @@
           method="POST"
         >
 
-          <!-- Email notification subject -->
+          <!-- Email subject -->
           <input
             type="hidden"
             name="_subject"
@@ -98,7 +143,7 @@
             value="https://shesh-dulaj.github.io/research-portfolio/thanks.html"
           >
 
-          <!-- Live website contact URL -->
+          <!-- Website URL -->
           <input
             type="hidden"
             name="_url"
@@ -109,18 +154,21 @@
           <input
             type="text"
             name="_honey"
-            style="display:none"
             tabindex="-1"
             autocomplete="off"
+            aria-hidden="true"
           >
 
           <!-- Full name -->
           <label for="cname">
             Full name
+
             <input
               id="cname"
               name="Name"
+              type="text"
               autocomplete="name"
+              maxlength="100"
               required
             >
           </label>
@@ -128,6 +176,7 @@
           <!-- Email address -->
           <label for="cemail">
             Email address
+
             <input
               id="cemail"
               name="email"
@@ -145,9 +194,12 @@
           <!-- Subject -->
           <label for="csubject">
             Subject
+
             <input
               id="csubject"
               name="Subject"
+              type="text"
+              maxlength="150"
               required
             >
           </label>
@@ -155,9 +207,12 @@
           <!-- Message -->
           <label for="cmsg">
             Message
+
             <textarea
               id="cmsg"
               name="Message"
+              rows="5"
+              maxlength="5000"
               required
             ></textarea>
           </label>
@@ -179,17 +234,20 @@
         </form>
 
       </div>
+
     </div>
   </section>
 
 </main>
 
+<!-- Footer -->
 <footer class="site-footer">
   <div class="wrap">
 
     <div class="foot-grid">
 
       <div class="foot-brand">
+
         <a class="brand" href="index.html" aria-label="Home">
           <img
             class="mark"
@@ -197,9 +255,10 @@
             alt=""
             aria-hidden="true"
           >
+
           <span class="brand-text">
             <strong>Research Portfolio</strong>
-            <small>Automated Water Quality & Contamination Detection</small>
+            <small>Automated Water Quality &amp; Contamination Detection</small>
           </span>
         </a>
 
@@ -207,10 +266,12 @@
           An integrated AI system that assesses water quality
           and contamination and recommends purification steps.
         </p>
+
       </div>
 
       <div>
         <h2>Explore</h2>
+
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="domain.html">Domain</a></li>
@@ -224,6 +285,7 @@
 
       <div>
         <h2>Contact</h2>
+
         <ul>
           <li>dinidu2001dananjaya@gmail.com</li>
           <li>+94 76 050 5141</li>
@@ -232,20 +294,28 @@
 
       <div>
         <h2>Research</h2>
+
         <ul>
-          <li>Faculty of Computing, Sri Lanka Institute of Information Technology</li>
-          <li>SLIIT, New Kandy Road, Malabe, Sri Lanka</li>
+          <li>
+            Faculty of Computing, Sri Lanka Institute of Information Technology
+          </li>
+          <li>
+            SLIIT, New Kandy Road, Malabe, Sri Lanka
+          </li>
         </ul>
       </div>
 
     </div>
 
     <div class="foot-base">
+
       <span>
         &copy; 2026 Automated Water Quality &amp;
         Contamination Detection. All rights reserved.
       </span>
+
       <a href="#top">Back to top</a>
+
     </div>
 
   </div>
