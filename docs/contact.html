@@ -17,37 +17,22 @@
 
   <link rel="stylesheet" href="css/styles.css">
 
-  <!-- Contact form border fix -->
+  <!-- Remove red validation borders without JavaScript -->
   <style>
-    /* Default state: do not show red borders */
-    .formcard input:not([type="hidden"]):not([type="text"]),
-    .formcard input[name="Name"],
-    .formcard input[name="Subject"],
-    .formcard textarea {
-      border-color: #273252;
-      outline: none;
-      box-shadow: none;
-    }
-
-    /* Keep normal borders when fields are empty or invalid */
     .formcard input:invalid,
-    .formcard textarea:invalid {
-      border-color: #273252;
-      box-shadow: none;
+    .formcard textarea:invalid,
+    .formcard input:user-invalid,
+    .formcard textarea:user-invalid {
+      border-color: #273252 !important;
+      box-shadow: none !important;
+      outline: none;
     }
 
-    /* Highlight only when a field is focused */
     .formcard input:focus,
     .formcard textarea:focus {
-      border-color: #6479ff;
+      border-color: #6479ff !important;
+      box-shadow: 0 0 0 2px rgba(100, 121, 255, 0.15) !important;
       outline: none;
-      box-shadow: 0 0 0 2px rgba(100, 121, 255, 0.15);
-    }
-
-    /* Show red border only after the user interacts with a field */
-    .formcard input.user-invalid,
-    .formcard textarea.user-invalid {
-      border-color: #ff6b6b;
     }
   </style>
 </head>
@@ -118,19 +103,18 @@
         <div class="formcard">
 
           <form
-            id="contactForm"
             action="https://formsubmit.co/dinidu2001dananjaya@gmail.com"
             method="POST"
           >
 
-            <!-- Email notification subject -->
+            <!-- Email subject -->
             <input
               type="hidden"
               name="_subject"
               value="New message from the water quality research website"
             >
 
-            <!-- Email formatting -->
+            <!-- Email format -->
             <input
               type="hidden"
               name="_template"
@@ -144,7 +128,7 @@
               value="https://shesh-dulaj.github.io/research-portfolio/thanks.html"
             >
 
-            <!-- Contact page URL -->
+            <!-- Website URL -->
             <input
               type="hidden"
               name="_url"
@@ -220,13 +204,13 @@
             <p class="note">
               Your message is delivered to the research team's inbox.
               You may be asked to confirm that you are not a robot,
-              and you will be redirected to a confirmation page after
-              successful submission.
+              and you will see a confirmation page after submission.
             </p>
 
           </form>
 
         </div>
+
       </div>
     </section>
 
@@ -274,7 +258,11 @@
         <div>
           <h2>Contact</h2>
           <ul>
-            <li>dinidu2001dananjaya@gmail.com</li>
+            <li>
+              <a href="mailto:dinidu2001dananjaya@gmail.com">
+                dinidu2001dananjaya@gmail.com
+              </a>
+            </li>
             <li>+94 76 050 5141</li>
           </ul>
         </div>
@@ -300,45 +288,6 @@
 
     </div>
   </footer>
-
-  <!-- Form validation styling -->
-  <script>
-    const contactForm = document.getElementById("contactForm");
-
-    const fields = contactForm.querySelectorAll(
-      'input[name="Name"], input[name="email"], ' +
-      'input[name="Subject"], textarea[name="Message"]'
-    );
-
-    fields.forEach((field) => {
-      field.addEventListener("input", () => {
-        if (field.checkValidity()) {
-          field.classList.remove("user-invalid");
-        }
-      });
-
-      field.addEventListener("blur", () => {
-        if (!field.checkValidity() && field.value.trim() !== "") {
-          field.classList.add("user-invalid");
-        } else {
-          field.classList.remove("user-invalid");
-        }
-      });
-    });
-
-    contactForm.addEventListener("submit", (event) => {
-      fields.forEach((field) => {
-        if (!field.checkValidity()) {
-          field.classList.add("user-invalid");
-        }
-      });
-
-      if (!contactForm.checkValidity()) {
-        event.preventDefault();
-        contactForm.reportValidity();
-      }
-    });
-  </script>
 
 </body>
 </html>
