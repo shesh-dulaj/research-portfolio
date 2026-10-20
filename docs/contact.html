@@ -2,324 +2,343 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Contact us | Water Quality &amp; Contamination Detection</title>
+  <title>Contact us | Water Quality &amp; Contamination Detection</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+  >
 
-<link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 
-<!-- Contact form validation border fix -->
-<style>
-.formcard input:not([type="hidden"]):not([name="_honey"]),
-.formcard textarea {
-  border: 1px solid #263454;
-  outline: none;
-  box-shadow: none;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
-}
+  <!-- Contact form border fix -->
+  <style>
+    /* Default state: do not show red borders */
+    .formcard input:not([type="hidden"]):not([type="text"]),
+    .formcard input[name="Name"],
+    .formcard input[name="Subject"],
+    .formcard textarea {
+      border-color: #273252;
+      outline: none;
+      box-shadow: none;
+    }
 
-/* Remove red borders caused by validation states */
-.formcard input:invalid,
-.formcard textarea:invalid {
-  border-color: #263454;
-  box-shadow: none;
-}
+    /* Keep normal borders when fields are empty or invalid */
+    .formcard input:invalid,
+    .formcard textarea:invalid {
+      border-color: #273252;
+      box-shadow: none;
+    }
 
-/* Focus state */
-.formcard input:focus,
-.formcard textarea:focus {
-  border-color: #60a5fa;
-  outline: none;
-  box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.15);
-}
+    /* Highlight only when a field is focused */
+    .formcard input:focus,
+    .formcard textarea:focus {
+      border-color: #6479ff;
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(100, 121, 255, 0.15);
+    }
 
-/* Keep hidden fields hidden */
-.formcard input[type="hidden"],
-.formcard input[name="_honey"] {
-  display: none;
-}
-</style>
-
+    /* Show red border only after the user interacts with a field */
+    .formcard input.user-invalid,
+    .formcard textarea.user-invalid {
+      border-color: #ff6b6b;
+    }
+  </style>
 </head>
 
 <body id="top">
 
-<header class="site-header">
-  <div class="wrap header-in">
+  <header class="site-header">
+    <div class="wrap header-in">
 
-    <a class="brand" href="index.html" aria-label="Home">
-      <img class="mark" src="images/logo.jpeg" alt="" aria-hidden="true">
+      <a class="brand" href="index.html" aria-label="Home">
+        <img class="mark" src="images/logo.jpeg" alt="" aria-hidden="true">
 
-      <span class="brand-text">
-        <strong>Research Portfolio</strong>
-        <small>Automated Water Quality &amp; Contamination Detection</small>
-      </span>
-    </a>
+        <span class="brand-text">
+          <strong>Research Portfolio</strong>
+          <small>Automated Water Quality &amp; Contamination Detection</small>
+        </span>
+      </a>
 
-    <nav class="links" aria-label="Main">
-      <a href="index.html">Home</a>
-      <a href="domain.html">Domain</a>
-      <a href="milestones.html">Milestones</a>
-      <a href="documents.html">Documents</a>
-      <a href="presentations.html">Presentations</a>
-      <a href="about.html">About us</a>
-      <a href="contact.html" aria-current="page">Contact us</a>
-    </nav>
+      <nav class="links" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="domain.html">Domain</a>
+        <a href="milestones.html">Milestones</a>
+        <a href="documents.html">Documents</a>
+        <a href="presentations.html">Presentations</a>
+        <a href="about.html">About us</a>
+        <a href="contact.html" aria-current="page">Contact us</a>
+      </nav>
 
-  </div>
-</header>
+    </div>
+  </header>
 
-<main class="wrap">
+  <main class="wrap">
 
-  <div class="page-head">
-    <span class="tag">Contact us</span>
+    <div class="page-head">
+      <span class="tag">Contact us</span>
 
-    <h1>Get in touch with the team</h1>
+      <h1>Get in touch with the team</h1>
 
-    <p>
-      We welcome inquiries, feedback and collaboration
-      opportunities relating to our research into automated
-      water quality and contamination assessment.
-    </p>
-  </div>
+      <p>
+        We welcome inquiries, feedback and collaboration
+        opportunities relating to our research into automated
+        water quality and contamination assessment.
+      </p>
+    </div>
 
-  <section>
-    <div class="split">
+    <section>
+      <div class="split">
 
-      <!-- Research team contact details -->
-      <div class="mailcard">
+        <div class="mailcard">
+          <h3>Research team</h3>
 
-        <h3>Research team</h3>
-
-        <div>
-          <span class="tag">Email</span>
-          <code>dinidu2001dananjaya@gmail.com</code>
-        </div>
-
-        <div>
-          <span class="tag">University</span>
-          <code>Faculty of Computing, Sri Lanka Institute of Information Technology</code>
-        </div>
-
-        <div>
-          <span class="tag">Address</span>
-          <code>SLIIT, New Kandy Road, Malabe, Sri Lanka</code>
-        </div>
-
-      </div>
-
-      <!-- Contact form -->
-      <div class="formcard">
-
-        <form
-          action="https://formsubmit.co/dinidu2001dananjaya@gmail.com"
-          method="POST"
-        >
-
-          <!-- Email subject -->
-          <input
-            type="hidden"
-            name="_subject"
-            value="New message from the water quality research website"
-          >
-
-          <!-- Email formatting -->
-          <input
-            type="hidden"
-            name="_template"
-            value="table"
-          >
-
-          <!-- Redirect after successful submission -->
-          <input
-            type="hidden"
-            name="_next"
-            value="https://shesh-dulaj.github.io/research-portfolio/thanks.html"
-          >
-
-          <!-- Website URL -->
-          <input
-            type="hidden"
-            name="_url"
-            value="https://shesh-dulaj.github.io/research-portfolio/contact.html"
-          >
-
-          <!-- Spam protection -->
-          <input
-            type="text"
-            name="_honey"
-            tabindex="-1"
-            autocomplete="off"
-            aria-hidden="true"
-          >
-
-          <!-- Full name -->
-          <label for="cname">
-            Full name
-
-            <input
-              id="cname"
-              name="Name"
-              type="text"
-              autocomplete="name"
-              maxlength="100"
-              required
-            >
-          </label>
-
-          <!-- Email address -->
-          <label for="cemail">
-            Email address
-
-            <input
-              id="cemail"
-              name="email"
-              type="email"
-              inputmode="email"
-              autocomplete="email"
-              placeholder="name@example.com"
-              pattern="[^@ ]+@[^@ ]+[.][^@ ]{2,}"
-              title="Enter a valid email address, for example name@example.com"
-              maxlength="120"
-              required
-            >
-          </label>
-
-          <!-- Subject -->
-          <label for="csubject">
-            Subject
-
-            <input
-              id="csubject"
-              name="Subject"
-              type="text"
-              maxlength="150"
-              required
-            >
-          </label>
-
-          <!-- Message -->
-          <label for="cmsg">
-            Message
-
-            <textarea
-              id="cmsg"
-              name="Message"
-              rows="5"
-              maxlength="5000"
-              required
-            ></textarea>
-          </label>
-
-          <!-- Submit button -->
           <div>
-            <button type="submit">
-              Send message
-            </button>
+            <span class="tag">Email</span>
+            <code>dinidu2001dananjaya@gmail.com</code>
           </div>
 
-          <p class="note">
-            Your message is delivered straight to the research
-            team's inbox. You may be asked to confirm you are
-            not a robot, and you will see a confirmation page
-            after sending.
-          </p>
+          <div>
+            <span class="tag">University</span>
+            <code>Faculty of Computing, Sri Lanka Institute of Information Technology</code>
+          </div>
 
-        </form>
+          <div>
+            <span class="tag">Address</span>
+            <code>SLIIT, New Kandy Road, Malabe, Sri Lanka</code>
+          </div>
+        </div>
 
-      </div>
+        <div class="formcard">
 
-    </div>
-  </section>
-
-</main>
-
-<!-- Footer -->
-<footer class="site-footer">
-  <div class="wrap">
-
-    <div class="foot-grid">
-
-      <div class="foot-brand">
-
-        <a class="brand" href="index.html" aria-label="Home">
-          <img
-            class="mark"
-            src="images/logo.jpeg"
-            alt=""
-            aria-hidden="true"
+          <form
+            id="contactForm"
+            action="https://formsubmit.co/dinidu2001dananjaya@gmail.com"
+            method="POST"
           >
 
-          <span class="brand-text">
-            <strong>Research Portfolio</strong>
-            <small>Automated Water Quality &amp; Contamination Detection</small>
-          </span>
-        </a>
+            <!-- Email notification subject -->
+            <input
+              type="hidden"
+              name="_subject"
+              value="New message from the water quality research website"
+            >
 
-        <p>
-          An integrated AI system that assesses water quality
-          and contamination and recommends purification steps.
-        </p>
+            <!-- Email formatting -->
+            <input
+              type="hidden"
+              name="_template"
+              value="table"
+            >
+
+            <!-- Redirect after submission -->
+            <input
+              type="hidden"
+              name="_next"
+              value="https://shesh-dulaj.github.io/research-portfolio/thanks.html"
+            >
+
+            <!-- Contact page URL -->
+            <input
+              type="hidden"
+              name="_url"
+              value="https://shesh-dulaj.github.io/research-portfolio/contact.html"
+            >
+
+            <!-- Spam protection -->
+            <input
+              type="text"
+              name="_honey"
+              style="display:none"
+              tabindex="-1"
+              autocomplete="off"
+            >
+
+            <!-- Full name -->
+            <label for="cname">
+              Full name
+              <input
+                id="cname"
+                name="Name"
+                type="text"
+                autocomplete="name"
+                maxlength="100"
+                required
+              >
+            </label>
+
+            <!-- Email address -->
+            <label for="cemail">
+              Email address
+              <input
+                id="cemail"
+                name="email"
+                type="email"
+                inputmode="email"
+                autocomplete="email"
+                placeholder="name@example.com"
+                maxlength="120"
+                required
+              >
+            </label>
+
+            <!-- Subject -->
+            <label for="csubject">
+              Subject
+              <input
+                id="csubject"
+                name="Subject"
+                type="text"
+                maxlength="150"
+                required
+              >
+            </label>
+
+            <!-- Message -->
+            <label for="cmsg">
+              Message
+              <textarea
+                id="cmsg"
+                name="Message"
+                rows="6"
+                maxlength="5000"
+                required
+              ></textarea>
+            </label>
+
+            <!-- Submit button -->
+            <div>
+              <button type="submit">Send message</button>
+            </div>
+
+            <p class="note">
+              Your message is delivered to the research team's inbox.
+              You may be asked to confirm that you are not a robot,
+              and you will be redirected to a confirmation page after
+              successful submission.
+            </p>
+
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+
+      <div class="foot-grid">
+
+        <div class="foot-brand">
+          <a class="brand" href="index.html" aria-label="Home">
+            <img
+              class="mark"
+              src="images/logo.jpeg"
+              alt=""
+              aria-hidden="true"
+            >
+
+            <span class="brand-text">
+              <strong>Research Portfolio</strong>
+              <small>Automated Water Quality &amp; Contamination Detection</small>
+            </span>
+          </a>
+
+          <p>
+            An integrated AI system that assesses water quality
+            and contamination and recommends purification steps.
+          </p>
+        </div>
+
+        <div>
+          <h2>Explore</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="domain.html">Domain</a></li>
+            <li><a href="milestones.html">Milestones</a></li>
+            <li><a href="documents.html">Documents</a></li>
+            <li><a href="presentations.html">Presentations</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Contact</h2>
+          <ul>
+            <li>dinidu2001dananjaya@gmail.com</li>
+            <li>+94 76 050 5141</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Research</h2>
+          <ul>
+            <li>Faculty of Computing, Sri Lanka Institute of Information Technology</li>
+            <li>SLIIT, New Kandy Road, Malabe, Sri Lanka</li>
+          </ul>
+        </div>
 
       </div>
 
-      <div>
-        <h2>Explore</h2>
+      <div class="foot-base">
+        <span>
+          &copy; 2026 Automated Water Quality &amp;
+          Contamination Detection. All rights reserved.
+        </span>
 
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="domain.html">Domain</a></li>
-          <li><a href="milestones.html">Milestones</a></li>
-          <li><a href="documents.html">Documents</a></li>
-          <li><a href="presentations.html">Presentations</a></li>
-          <li><a href="about.html">About us</a></li>
-          <li><a href="contact.html">Contact us</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h2>Contact</h2>
-
-        <ul>
-          <li>dinidu2001dananjaya@gmail.com</li>
-          <li>+94 76 050 5141</li>
-        </ul>
-      </div>
-
-      <div>
-        <h2>Research</h2>
-
-        <ul>
-          <li>
-            Faculty of Computing, Sri Lanka Institute of Information Technology
-          </li>
-          <li>
-            SLIIT, New Kandy Road, Malabe, Sri Lanka
-          </li>
-        </ul>
+        <a href="#top">Back to top</a>
       </div>
 
     </div>
+  </footer>
 
-    <div class="foot-base">
+  <!-- Form validation styling -->
+  <script>
+    const contactForm = document.getElementById("contactForm");
 
-      <span>
-        &copy; 2026 Automated Water Quality &amp;
-        Contamination Detection. All rights reserved.
-      </span>
+    const fields = contactForm.querySelectorAll(
+      'input[name="Name"], input[name="email"], ' +
+      'input[name="Subject"], textarea[name="Message"]'
+    );
 
-      <a href="#top">Back to top</a>
+    fields.forEach((field) => {
+      field.addEventListener("input", () => {
+        if (field.checkValidity()) {
+          field.classList.remove("user-invalid");
+        }
+      });
 
-    </div>
+      field.addEventListener("blur", () => {
+        if (!field.checkValidity() && field.value.trim() !== "") {
+          field.classList.add("user-invalid");
+        } else {
+          field.classList.remove("user-invalid");
+        }
+      });
+    });
 
-  </div>
-</footer>
+    contactForm.addEventListener("submit", (event) => {
+      fields.forEach((field) => {
+        if (!field.checkValidity()) {
+          field.classList.add("user-invalid");
+        }
+      });
+
+      if (!contactForm.checkValidity()) {
+        event.preventDefault();
+        contactForm.reportValidity();
+      }
+    });
+  </script>
 
 </body>
 </html>
