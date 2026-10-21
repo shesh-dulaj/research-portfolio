@@ -1,4 +1,4 @@
-AUTOMATED WATER QUALITY & CONTAMINATION DETECTION: RESEARCH PORTFOLIO WEBSITE
+WATER PURIFICATION: RESEARCH PORTFOLIO WEBSITE
 ===========================================================================
 
 Plain HTML + CSS (no JavaScript), as required by the course web.
